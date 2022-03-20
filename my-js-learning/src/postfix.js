@@ -31,7 +31,7 @@ function result_expression(expression, variables) {
           // console.log('PUSH stack:' + evaluateExp(operand1,operand2,expr[i]) );
           let evRes = evaluateExp(operand1,operand2,expr[i]);
           if(evRes != null)
-            stack.push(evaluateExp(operand1,operand2,expr[i]));
+            stack.push(evRes);
         } else { // stack do not have enough operand for operation
           return null;
         }
